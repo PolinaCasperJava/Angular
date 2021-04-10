@@ -1,0 +1,18 @@
+<h1 class="font-weight-normal text-center mt-3">Клиенты</h1>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let customer of customers">
+    <table>
+      <tbody>
+      <tr>
+        <td class="align-top">
+          <span>{{customer.id}}</span>
+        </td>
+        <td class="align-top">
+          <span><a routerLink="/customers/{{customer.id}}">{{customer.name}}</a></span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+

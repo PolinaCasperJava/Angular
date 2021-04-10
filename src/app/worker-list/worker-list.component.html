@@ -1,0 +1,18 @@
+<h1 class="font-weight-normal text-center mt-3">Сотрудники</h1>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let worker of workers">
+    <table>
+      <tbody>
+      <tr>
+        <td class="align-top">
+          <span>{{worker.id}}</span>
+        </td>
+        <td class="align-top">
+          <span><a routerLink="/workers/{{worker.id}}">{{worker.lastName}} {{worker.firstName}} {{worker.patronymic}}</a></span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
